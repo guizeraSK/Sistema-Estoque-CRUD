@@ -173,7 +173,7 @@ if(isset($_POST['confirmar'])){
 
 <br>
 
-<button type="submit" name="confirmar"><i class="fas fa-save"></i> Salvar</button>
+<a href="index.php?p=it_cadastrados"><button type="submit" name="confirmar"><i class="fas fa-save"></i> Salvar</button></a>
 </fieldset>
 </form>
 

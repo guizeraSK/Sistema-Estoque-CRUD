@@ -54,7 +54,7 @@
     <head>
         <title>Login</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="assets/estilo.css">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
         <script src="https://kit.fontawesome.com/0844b1c776.js" crossorigin="anonymous"></script>
     </head>
     <body class="bb">
@@ -68,18 +68,26 @@
     
        <!-- Formulário criado para sessão de login -->
         <form class="form3" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-            <fieldset class="field">
-                <legend>Sessão de Login</legend>
-            
-                <label>Login: <input type="text" name="login"></label> <br>
-                
-                
-                <label>Senha: <input type="password" name="senha"></label> <br>
+            <div class="box">
+                <div class="icon-log-shop">SK Store<img src="https://i.pinimg.com/originals/d9/36/de/d936debe26c54ae7c9d1285f9ce920da.jpg" class="icon-loja"></div>
+                <h1>Login</h1>
+                <input type="text" name="login" placeholder="Username">
+                <input type="password" name="senha" placeholder="Password">
                
-                <button type="submit" name="btn-entrar"><i class="fas fa-sign-in-alt"></i> Entrar</button> ||
+                <button type="submit" name="btn-entrar"><i class="fas fa-sign-in-alt"></i> Entrar</button>
                 <!-- Aqui eu tentei colocar o button mas se eu coloco ele não redireciona para o .php -->
-                <button><a href="index.php?p=cadastro_usu"><i class="fas fa-user-plus"></i> Cadastrar</a></button>
-            </fieldset>
+
+                <button type="submit" onclick="redirecionar();"><i class="fas fa-user-plus"></i> Cadastrar</button>
+            </div>
         </form>
+
+        <script src="script.js"></script>
+
+
     </body>
 </html>
+
+
+
+
+<!-- <a href="index.php?p=cadastro_usu" target="_blank">  -->

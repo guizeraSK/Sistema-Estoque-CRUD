@@ -75,6 +75,41 @@ body{
 }
 .icon-loja{
     max-width: 50px;
-    float: right;
+    
+    border-radius: 6px;
 }
 
+.box button[type = "submit"]:hover{
+    background: #2ecc71;
+}
+
+.box button[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box button{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    white-space: nowrap;
+}
